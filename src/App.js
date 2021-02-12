@@ -16,6 +16,7 @@ import Home from './Page/Home'
 import SignIn from './Page/SignIn'
 import SignUp from './Page/SignUp'
 import NotFound from './Page/NotFound'
+import Footer from './layout/Footer'
 
 function App() {
   const [user, setUser] = useState(null)
@@ -29,6 +30,7 @@ function App() {
           <Route exact path='/signup' component={SignUp} />
           <Route exact path='*' component={NotFound} />
       </Switch>
+      <Footer/>
     </UserContext.Provider>
   </BrowserRouter>
 
